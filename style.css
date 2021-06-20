@@ -10,11 +10,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1 {
+  background-color: transparent;
   margin: 20px;
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: #bff3e3;
 }
 .game {
   margin: 20px;
@@ -51,6 +55,8 @@ h1 {
 
 .score-label {
   font-size: 26px;
+  background-color: transparent;
+  color: aqua;
 }
 .score {
   border: none;
@@ -82,12 +88,36 @@ h1 {
 }
 p {
   text-align: center;
+  width: 500px;
+  font-size: 30px;
+  height: 50px;
+  background-color: transparent;
 }
 
+span {
+  background-color: transparent;
+}
 .btn {
   height: 50px;
   width: 200px;
   font-size: 26px;
   border-radius: 5px;
+  border: none;
   background-color: rgb(107, 163, 255);
+}
+.nav {
+  background-color: transparent;
+}
+.btn:active {
+  outline: none;
+
+  transform: scale(0.95);
+  border: none;
+}
+.btn:focus {
+  outline: none;
+}
+
+h2 {
+  background-color: transparent;
 }
