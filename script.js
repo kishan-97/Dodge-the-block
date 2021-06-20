@@ -45,3 +45,18 @@ stop.addEventListener("click", () => {
 start.addEventListener("click", () => {
   block.classList.add("active");
 });
+
+var load = 0;
+
+const L = document.getElementById("loading");
+const Screen = document.getElementById("container");
+
+var loading = setInterval(() => {
+  if (load <= 99) {
+    console.log(load);
+    load++;
+    L.innerHTML = `Loading ${load}%`;
+    Screen.style.opacity = `${(1 - (100 - load) / load) * 1}`;
+  }
+  if (load == 100) L.style.opacity = 0;
+}, 10);
