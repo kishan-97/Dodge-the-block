@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(245, 246, 255);
+}
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin: 20px;
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+}
+.game {
+  margin: 20px;
+  background-color: rgb(45, 47, 48);
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: rgb(227, 236, 96);
+  position: relative;
+  top: 150px;
+}
+.animate {
+  animation: jump 0.5s linear;
+}
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+.score-label {
+  font-size: 26px;
+}
+.score {
+  border: none;
+  border-bottom: 2px solid black;
+  height: 40px;
+  width: 500px;
+  margin: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+#block {
+  background-color: rgb(255, 115, 0);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 130px;
+  left: 500px;
+}
+.block.active {
+  animation: block 1.4s infinite linear;
+}
+@keyframes block {
+  0% {
+    left: 500px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+p {
+  text-align: center;
+}
+
+.btn {
+  height: 50px;
+  width: 200px;
+  font-size: 26px;
+  border-radius: 5px;
+  background-color: rgb(107, 163, 255);
+}
